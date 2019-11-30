@@ -45,6 +45,51 @@ namespace basicosCSharp
             bool comparacionIgual = comparacionY == comparacionO;
             bool valorNegado = !comparacionIgual;
 
+            string[] nombres = new string[10];
+            nombres[4] = "Ruben";
+            string[] diasDeLaSemana = { "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo" };
+            Console.WriteLine("La semana tiene {0} días", diasDeLaSemana.Length);
+            int[] numerosPrimos = { 1, 2, 3, 5, 7, 11 };
+            bool[] celdasMarcadas = new bool[16];
+
+            if (DateTime.Now.Minute % 2 == 0)
+            {
+                Console.WriteLine("Este minuto es par");
+            }
+            else if (DateTime.Now.Minute == 5)
+            {
+                Console.WriteLine("Este es el minuto 5");
+            }
+            else
+            {
+                Console.WriteLine("Este minuto es impar");
+            }
+
+
+            int rondasFaltantes = 3;
+            while (rondasFaltantes > 0)
+            {
+                rondasFaltantes--;
+            }
+            rondasFaltantes = 3;
+            do
+            {
+                rondasFaltantes--;
+            } while (rondasFaltantes > 0);
+
+            string[] diasSemanales = { "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo" };
+            for (int dia = 0; dia < 7; dia++)
+            {
+                Console.WriteLine("{0} es el número {1} de la semana", diasSemanales[dia], dia + 1);
+            }
+
+            string frase = "La programación me permite crear";
+            Console.WriteLine("{0}", frase.ToUpper());
+            Console.WriteLine("{0}", frase.ToLower());
+            Console.WriteLine("{0} {1}", frase.Substring(1).ToUpper(), frase.Substring(1, frase.Length - 2).ToLower());
+            int unMillon = 1000000;
+            string numeroComoCaracter = unMillon.ToString();
+
 
         }
     }
