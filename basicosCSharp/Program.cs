@@ -27,6 +27,19 @@ namespace basicosCSharp
             double resultaddoPotencia = Math.Pow(72, 2);
             double resultadoRaiz = Math.Sqrt(144);
 
+            //sadfsfgdf
+
+            int primerNumero = 48;
+            int segundoNumero = 12;
+            primerNumero += segundoNumero;
+            primerNumero -= segundoNumero;
+            primerNumero *= segundoNumero;
+            primerNumero /= segundoNumero;
+            primerNumero %= segundoNumero;
+            primerNumero++;
+            primerNumero--;
+
+
         }
     }
 }
