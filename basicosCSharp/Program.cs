@@ -4,6 +4,17 @@ namespace basicosCSharp
 {
     class Program
     {
+        double resultado = 0;
+        void LimpiarResultado()
+        {
+            resultado = 0;
+        }
+        double Multiplicar(int a, int b)
+        {
+            resultado = a + b;
+            return resultado;
+        }
+
         static void Main(string[] args)
         {
             int añoActual = Convert.ToInt32("2019");
@@ -86,7 +97,7 @@ namespace basicosCSharp
             string frase = "La programación me permite crear";
             Console.WriteLine("{0}", frase.ToUpper());
             Console.WriteLine("{0}", frase.ToLower());
-            Console.WriteLine("{0} {1}", frase.Substring(1).ToUpper(), frase.Substring(1, frase.Length - 2).ToLower());
+            Console.WriteLine("{0}{1}", frase.Substring(0,1).ToUpper(), frase.Substring(1, frase.Length - 2).ToLower());
             int unMillon = 1000000;
             string numeroComoCaracter = unMillon.ToString();
 
