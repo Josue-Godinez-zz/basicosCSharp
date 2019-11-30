@@ -18,6 +18,15 @@ namespace basicosCSharp
             bool boolVerdadero = true;
             bool boolFalso = false;
             Console.WriteLine("Variables boleanas: {0} y {1}", boolVerdadero, boolFalso);
+
+            double resultadoSuma = 540 + -18.5;
+            float resultadoResta = 3458.35f - 334.34f;
+            decimal resultadoMultiplicacion = 23.423m * 3423m;
+            decimal resultadoDivision = 239.42m / 0.3m;
+            decimal resultadoResiduo = 2321.42m % 23m;
+            double resultaddoPotencia = Math.Pow(72, 2);
+            double resultadoRaiz = Math.Sqrt(144);
+
         }
     }
 }
